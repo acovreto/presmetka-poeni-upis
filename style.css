@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 90%;
+  min-height: 100vh;
+  padding: 10px;
+  /* background-color: #ecf0f3; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.svidetelstva {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.table-svidetelstvo {
+  box-shadow: inset 5px 5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+  background-color: #ecf0f3;
+}
+/* .svidetelstva table {
+  margin-right: 10px;
+} */
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+input {
+  margin-right: 5px;
+  font-size: 30px;
+}
+.svidetelstva {
+  box-shadow: inset -5px -5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+  padding: 20px;
+}
+table th {
+  background-color: #ecf0f3;
+  box-shadow: inset -5px -5px 12px #ffffff,
+    inset 5px 5px 12px rgba(0, 0, 0, 0.16);
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+tr th:not(first-child) {
+  width: 25px;
+}
+tr th:first-child {
+  width: 150px;
+  cursor: default;
+  border-radius: 50px;
+  box-shadow: none;
+  border-radius: 0;
+  background: none;
+}
+th {
+  text-align: center;
+  cursor: pointer;
+}
+.change-color {
+  background-color: rgb(0, 255, 72);
+  box-shadow: none;
+  color: white;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+.submit,
+.reset {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.5rem;
+  padding: 7px 20px;
+  border-radius: 50px;
+  color: #ecf0f3;
+}
+.submit {
+  background-image: linear-gradient(to right, #22c55e, #14532d);
+}
+.reset {
+  background-image: linear-gradient(to right, #ef4444, #7f1d1d);
+}
+.submit:hover {
+  background-image: linear-gradient(to right, #14532d, #22c55e);
+}
+.reset:hover {
+  background-image: linear-gradient(to right, #7f1d1d, #ef4444);
+}
